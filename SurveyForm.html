@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="Style4.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform
+
+</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form" required >
+     
+      <fieldset>
+        <label id="name-label">Enter Your First Name: <input id="name" name="first-name" type="text" required placeholder="Enter your name" /></label>
+        
+      <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="Enter your email id"/></label>
+        <label id="number-label">Enter your number: <input id="number" placeholder="Enter your contact number"required type="number" min="10" max="10"/></label>
+      </fieldset>
+<fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label for="Definitely!"><input id="Definitely!" type="radio" name="recommend" class="inline" value="1"/> Definitely </label>
+        <label for="Maybe"><input id="Maybe" type="radio" name="recommend"class="inline" value="2" /> Maybe</label>
+        <label for="Not Sure"><input id="Not Sure" type="radio" name="recommend" class="inline" value="3" /> Not Sure</label>
+      </fieldset>
+<fieldset>
+ <label for="referrer">What is your favorite feature of freeCodeCamp? 
+          <select id="dropdown" name="Favourite">
+            <option value="">(select one)</option>
+            <option value="1">Challenges
+</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="3">Open Source</option>
+        </select>
+        </label>
+        </fieldset>
+      <fieldset>
+  <input type="checkbox" id="1" name="1" value="Front-end Projects">
+  <label for="vehicle1"> Front-end Projects</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+          </select>
+        </label>
+        <label for="bio">Any comments or suggestions?
+          <textarea id="bio" name="bio" rows="10" cols="15" placeholder="Enter your comment here...."></textarea>
+        </label>
+      <input type="submit" id="submit"value="Submit" required  />
+       
+      </fieldset>
+    </form>
+  </body>
+</html>
